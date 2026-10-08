@@ -1,0 +1,34 @@
+name: RWS stromingssnelheden vernieuwen
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/update-current-field.mjs
+      - current-field.js
+      - .github/workflows/current-data.yml
+permissions:
+  contents: write
+concurrency:
+  group: rws-current-update
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-current-field.mjs
+      - name: Publiceer modelwaarden
+        run: |
+          git config user.name 'Waterwolf broncontrole'
+          git config user.email 'waterwolf-data@users.noreply.github.com'
+          git add data/current-field.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Vernieuw RWS-stromingsmodelwaarden'
+            git pull --rebase
+            git push
+          fi

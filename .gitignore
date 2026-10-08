@@ -8,3 +8,5 @@ icons/captain-original.png
 data/bathymetry-source-*
 
 __pycache__/
+
+data/current-netcdf-header.bin

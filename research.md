@@ -58,3 +58,8 @@ Official ENC distribution: https://www.vaarweginformatie.nl/frp/page/infra_enc
 RWS explanation: https://www.rijkswaterstaat.nl/zakelijk/zakendoen-met-rijkswaterstaat/werkwijzen/werkwijze-in-gww/data-eisen-rijkswaterstaatcontracten/elektronische-vaarwegkaarten
 
 Live portrayal is feasible immediately. Per-cell edition dates and exact ZIP download URLs have not been established; a successful request is not evidence of a newly surveyed depth or of the PWA being a certified navigation system. `nautical-chart.js` therefore records the check time and leaves `editionAt` null.
+
+### Actual Waterwolf historical replay, 2025
+The official live-tracking page links the 2025 replay. Its public `get/?req=replay` endpoint returned a Waterwolf track with 455 GPS positions, 11 October 2025 07:50:59Z–17:34:58Z. `data/klipperrace-2025.json` preserves those positions and timestamps. The replay route endpoint also provides markers, preserved as historical tracker markers with no claim that Waterwolf rounded every one. Race signal time, actual finish crossing, mandatory course and historical weather/current fields remain unverified. Recording includes movement before/after racing; its first/last GPS position is not an official start/finish line.
+Source: https://tt.zeilvaartwarmond.nl/?event=Enkhuizer%20Klipperrace/2025/Drie%20Steden%20Race%20-%20alle%20deelnemers
+Linked by: https://klipperrace.nl/live-tracking
