@@ -2,3 +2,5 @@
 [hidden]{display:none!important}
 
 .voice-panel{margin-bottom:18px;padding:18px}.voice-panel h2{margin-bottom:8px}.voice-panel .voice-actions{display:flex;gap:10px;flex-wrap:wrap}.voice-panel small{display:block;margin:8px 0}.voice-panel input{max-width:600px}.voice-panel p{font-size:13px}.voice-panel[hidden]{display:none}
+
+.map-controls{display:flex;gap:8px;margin-bottom:10px}dialog{border:1px solid var(--line);border-radius:16px;padding:24px;max-width:min(92vw,580px);color:var(--ink)}dialog::backdrop{background:#102c3b99}#avatarDialog img{width:100%;max-width:512px;border-radius:16px}dialog button{margin:5px}#map{touch-action:none;cursor:grab}

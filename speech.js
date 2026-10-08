@@ -1,0 +1,7 @@
+export const speechDefaults={speechRate:.95,speechLanguage:'nl-BE',speechGender:'any',speechVoiceURI:''};
+export function matchingVoices(voices,language){return voices.filter(v=>String(v.lang).toLowerCase()===String(language).toLowerCase());}
+export function knownVoiceGender(voice){if(voice.gender==='male'||voice.gender==='female')return voice.gender;const name=String(voice.name||'');if(!/^Microsoft\b/i.test(name))return null;if(/\b(Frank|Bart)\b/i.test(name))return 'male';if(/\b(Colette|Lotte)\b/i.test(name))return 'female';return null;}
+export function speechOptions(settings={},voices=[]){let s={...speechDefaults,...settings},voice=voices.find(v=>v.voiceURI===s.speechVoiceURI),rate=Number(s.speechRate);return {voice:voice||matchingVoices(voices,s.speechLanguage).find(v=>s.speechGender!=='any'&&knownVoiceGender(v)===s.speechGender)||matchingVoices(voices,s.speechLanguage)[0]||null,lang:s.speechLanguage,rate:Number.isFinite(rate)?Math.max(.5,Math.min(1.5,rate)):.95};}
+let savedSpeechSettings={...speechDefaults};
+export function setSpeechSettings(settings){savedSpeechSettings={...speechDefaults,...settings};}
+export function applySpeechSettings(utterance,settings=savedSpeechSettings){const voices=typeof window!=='undefined'?window.speechSynthesis?.getVoices?.()||[]:[],options=speechOptions(settings,voices);utterance.lang=options.lang;utterance.rate=options.rate;if(options.voice)utterance.voice=options.voice;return options;}

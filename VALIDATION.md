@@ -23,3 +23,7 @@ Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen
 ## Spraakbediening 0.3.0
 
 38 automatische tests slagen, waaronder Nederlandse getallen, onbekende opdrachten, bevestiging, verval na dertig seconden en veranderde baancontext. In de browser is de invoerroute getest: “wind dertien knopen” wijzigt de wind; “volgende boei” vraagt bevestiging en verandert nog niets; “bevestig” activeert Finish. De fysieke microfoon, daadwerkelijke herkenning en hoorbaarheid zijn niet getest.
+
+## Kaart en stemmen 0.4.0
+
+42 automatische tests slagen. Browsercontrole: kaart standaard aan; zoom en kaartactievenster; annuleren; expliciete verwijdermogelijkheid bij boot; grote avatar; spreeksnelheid 0.5 en mannenvoorkeur bewaard na herladen. Toestel bood Microsoft Bart voor nl-BE: extra vrouwelijke/andere stemmen zijn niet op dit toestel bevestigd. Tweevingerzoom en fysieke stemkwaliteit blijven op telefoon te testen.

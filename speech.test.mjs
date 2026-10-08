@@ -1,0 +1,7 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {speechOptions,matchingVoices} from './speech.js';
+const voices=[{voiceURI:'be',lang:'nl-BE',name:'Vlaams'},{voiceURI:'nl',lang:'nl-NL',name:'Nederlands'}];
+test('Flemish selection and explicit actual voice',()=>{assert.equal(speechOptions({speechLanguage:'nl-BE'},voices).voice.voiceURI,'be');assert.equal(speechOptions({speechVoiceURI:'nl'},voices).voice.voiceURI,'nl');});
+test('unavailable voice remains honest and rate is bounded',()=>{assert.equal(speechOptions({speechLanguage:'nl-BE'},[]).voice,null);assert.equal(speechOptions({speechRate:99},voices).rate,1.5);assert.equal(speechOptions({speechRate:'bad'},voices).rate,.95);});
+test('gender preference never invents browser voice metadata',()=>{assert.equal(speechOptions({speechGender:'female',speechLanguage:'nl-BE'},voices).voice.voiceURI,'be');assert.equal(matchingVoices(voices,'nl-BE').length,1);});
+
+test('known Microsoft names honor gender preference with explicit voice taking priority',()=>{let known=[{name:'Microsoft Bart',lang:'nl-BE',voiceURI:'bart'},{name:'Microsoft Colette',lang:'nl-BE',voiceURI:'colette'}];assert.equal(speechOptions({speechLanguage:'nl-BE',speechGender:'female'},known).voice.voiceURI,'colette');assert.equal(speechOptions({speechLanguage:'nl-BE',speechGender:'male'},known).voice.voiceURI,'bart');assert.equal(speechOptions({speechLanguage:'nl-BE',speechGender:'female',speechVoiceURI:'bart'},known).voice.voiceURI,'bart');});

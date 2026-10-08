@@ -52,3 +52,11 @@ MIT License · Copyright © 2026 Serge Hanssens.
 Druk op **Start luisteren** en geef je browser microfoontoegang. Voorbeelden: “wat is de koers”, “lees de volgende actie”, “wind twaalf knopen”, “windrichting tweehonderdzeventig”, “volgende boei” en “welke zeilen”. De app spreekt het antwoord en de uitgevoerde wijziging uit. Baan-, positie-, start- en zeilwijzigingen vragen “bevestig” binnen dertig seconden; “annuleer” wist de opdracht. Zeilopdrachten registreren de gekozen configuratie; de bemanning voert de handeling uit.
 
 Spraakherkenning gebruikt de mogelijkheden van de telefoonbrowser en kan online worden verwerkt door diens spraakdienst. Het is een begrensde Nederlandse opdrachtenset. Zonder beschikbare herkenning kun je dezelfde opdrachten typen. Geluidsvolume en gesproken bemanningsmeldingen stel je in onder **Instellingen**. Test microfoon, verstaanbaarheid, batterij en meldingen op je eigen telefoon vóór vertrek; achtergrondwerking is niet gegarandeerd.
+
+## Kaart en stemmen 0.4.0
+
+Online kaart standaard actief. Zoomknoppen, hele-baanweergave, slepen, wielzoom en tweevingerzoom beschikbaar. Kaartklik opent een keuzevenster; een bestaande boot of boei biedt een expliciete verwijderknop. Start/finish blijven verplichte punten: verwijderen wist hun coördinaten. Klik op het kapiteinsicoon voor de grote avatar.
+
+Instellingen bevatten spreeksnelheid, nl-BE/nl-NL, man/vrouw-voorkeur en de werkelijk beschikbare toestelstemmen. Vier verschillende stemmen zijn niet op ieder toestel aanwezig. De app toont ontbrekende stemmen; installeer eventuele extra stemmen via de toestelinstellingen.
+
+Onderzoek naar actuele gegevens: RWS biedt de [bodemkaart IJsselmeergebied 2022](https://downloads.rijkswaterstaatdata.nl/bodemhoogte_ijsselmeergebied/), met bodemhoogte tegenover NAP. Integratie vraagt combinatie met lokale actuele waterstand via [WaterWebservices](https://rijkswaterstaatdata.nl/waterdata/). Deze koppeling is nog niet geïmplementeerd. De gecontroleerde RWS-catalogus bevat geen gekoppelde stromingsstations in het onderzochte IJsselmeer/Markermeergebied. Een [Deltares-model](https://www.deltares.nl/expertise/publicaties/ontwikkeling-zesde-generatie-3d-ijsselmeer-model-modelbouw-validatie) bestaat, maar een openbare operationele stromingsfeed is niet bevestigd.
