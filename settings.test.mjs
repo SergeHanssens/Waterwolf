@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {vibrationPattern,defaultSettings} from './settings.js';
+test('proposed lead times allow more preparation for sail work',()=>{assert.ok(defaultSettings.sailChangeSeconds>defaultSettings.tackSeconds);assert.equal(defaultSettings.systemNotification,false);});
+test('trilpatronen use alternating durations and recover unknown setting',()=>{for(let level of ['light','normal','strong']){let p=vibrationPattern(level);assert.ok(p.length%2===1);assert.ok(p.every(n=>n>0));}assert.deepEqual(vibrationPattern('unknown'),vibrationPattern('normal'));assert.ok(vibrationPattern('strong').reduce((a,b)=>a+b)>vibrationPattern('light').reduce((a,b)=>a+b));});

@@ -2,13 +2,13 @@
 
 ## Automatische controles
 
-28 tests slagen: geografische afstand/koers, stroomvectoren, windstilte, invoervalidatie, ontbrekende polar, verboden polygonen, ondiepte, onbekende diepte, overstagkosten en -tijd, stuurboord/bakboordzijde, geometrische boeironding, finishrichting, windafhankelijke polar, stroomgecompenseerde koers, tijdsaftelling en vaste dieptelocaties. JavaScript-syntax gecontroleerd.
+30 tests slagen: geografische afstand/koers, stroomvectoren, windstilte, invoervalidatie, ontbrekende polar, verboden polygonen, ondiepte, onbekende diepte, overstagkosten en -tijd, stuurboord/bakboordzijde, geometrische boeironding, finishrichting, windafhankelijke polar, stroomgecompenseerde koers, tijdsaftelling en vaste dieptelocaties. JavaScript-syntax gecontroleerd.
 
 De demonstratieroute voltooit op deze computer in circa 0,3 seconde binnen de engine-test. UI-berekening draait in een aparte worker. Dit bewijst geen globaal optimale tactiek.
 
 ## Browser
 
-In de Codex-browser getest: demobaan geeft koers/route en volgende manoeuvre; kapiteinsicoon laadt; tabwissels werken; gewone zeil- en polarformulieren verschijnen; technische invoer is verborgen; ankerstart toont wachten op startsein; lege verplichte boei onderdrukt koersadvies; officieel racesjabloon bevat geen verzonnen startpositie. Geen JavaScript-fouten tijdens deze controles.
+In de Codex-browser getest: demobaan geeft koers/route en volgende manoeuvre; kapiteinsicoon laadt; tabwissels werken; gewone zeil- en polarformulieren verschijnen; technische invoer is verborgen; ankerstart toont wachten op startsein; lege verplichte boei onderdrukt koersadvies; officieel racesjabloon bevat geen verzonnen startpositie. Geen JavaScript-fouten tijdens deze controles. Meldingsinstellingen, schermtest en heropenen met gewijzigde voorbereidingstijd zijn getest. De eerste versie en officiële boeidata zijn gepubliceerd op GitHub Pages; de automatische GitHub-tests slagen. Voorgestelde waarden en instelbare meldingskanalen zijn daarna toegevoegd.
 
 De browser bleef ondanks de aangevraagde telefoonafmetingen op een desktopbreedte staan. Responsive stijlen zijn aanwezig; visuele controle op een echte telefoon is nog nodig. GPS, hoorbaarheid bij wind, vergrendeld scherm en fysieke zeilhandelingen zijn niet op het water getest. Offline shell en telefooninstallatie moeten naast de cachecontrole in de echte telefoonbrowser worden getest.
 

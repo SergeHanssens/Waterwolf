@@ -13,9 +13,9 @@ Op een telefoon: publiceer de bestanden op HTTPS, bijvoorbeeld GitHub Pages. Ope
 ## Aan boord instellen
 
 1. Kies **Wedstrijd** en maak een race, of laad het Klipperrace-sjabloon. Vul WGS84-coördinaten in decimale graden in: noord/oost positief. Een start- of finishlijn heeft twee uiteinden. Voeg boeien in vaarvolgorde toe met de verplichte zijde. Controleer de definitieve baan tijdens het palaver.
-2. Kies **Waterwolf** en vul de beladen diepgang, kielspeling, manoeuvretijden, gemeten polar en zeilconfiguraties in. Ontbrekende waarden zijn bewust leeg. **Laad demo** gebruikt fictieve prestaties en een fictieve baan; die zijn geen Waterwolf-gegevens.
+2. Kies **Instellingen** en controleer de beladen diepgang, kielspeling, manoeuvretijden, gemeten polar en zeilconfiguraties in. Op verzoek zijn voorlopige startwaarden ingevuld. Ze blijven als **VOORSTEL** gemarkeerd totdat de kapitein ze bevestigt; ze zijn geen gemeten Waterwolf-prestaties of bevestigde windlimieten. **Laad demo** gebruikt fictieve prestaties en een fictieve baan; die zijn geen Waterwolf-gegevens.
 3. Voer wind en stroming in, of haal een Open-Meteo-modelvoorspelling op. GPS werkt na jouw toestemming. Handmatige waterdiepte geldt uitsluitend bij de meetpositie, niet voor de hele route.
-4. Laat de cockpit geopend. Zet desgewenst geluid/meldingen aan en stel de voorbereidingstijd in. Adviezen zijn gebaseerd op het ingevoerde scenario. Bevestig het startsein bij ankerstart voordat zeilen worden geadviseerd.
+4. Laat de cockpit geopend. Zet desgewenst geluid/meldingen aan en stel de voorbereidingstijden en meldingskanalen in. Voorgesteld: algemeen 120 s, overstag 90 s, gijpen 120 s, zeilwissel 180 s. Trillen, trilritme, toon, spraak, volume, scherm- en toestelmeldingen zijn aanpasbaar onder Instellingen. Gebruik **Bewaar meldingsinstellingen** en **Test een melding**. Fysieke trilsterkte en het mastervolume van de telefoon blijven toestelafhankelijk. Adviezen zijn gebaseerd op het ingevoerde scenario. Bevestig het startsein bij ankerstart voordat zeilen worden geadviseerd.
 5. Bevestig het bereiken van een boei; automatische juridische rondingscontrole op de echte GPS-track ontbreekt. Exporteer het logboek voor latere analyse.
 
 ## Wat deze versie doet
