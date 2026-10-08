@@ -1,6 +1,7 @@
-import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.1';
-import {routeRace} from './engine.js?v=0.6.1';
-import {currentFromField} from './current-field.js?v=0.6.1';
+import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.2';
+import {routeRace} from './engine.js?v=0.6.2';
+import {explainRoute} from './explanation.js?v=0.6.2';
+import {currentFromField} from './current-field.js?v=0.6.2';
 /** Shared entry point for worker execution and integration tests. Manual current wins. */
 export async function calculateWorkerRoute(input){
  const data={...input},missingCurrent=new Set();
@@ -13,11 +14,19 @@ export async function calculateWorkerRoute(input){
   const field=data.currentField,base=Number.isFinite(data.forecastBaseMs)?data.forecastBaseMs:Date.now();
   data.current=(position,seconds)=>{const sample=currentFromField(field,position,base+seconds*1000);if(sample.kind==='unknown'||!Number.isFinite(sample.speedKnots)||!Number.isFinite(sample.toDeg)){missingCurrent.add(sample.reason||'Geen geldige numerieke stromingscel.');return {speedKnots:null,toDeg:null};}return sample;};
  }
- const result=routeRace(data);
+ let result=routeRace(data),alternative=null;result.explanation=explainRoute(result,data,{compareAlternatives:data.explainAlternatives!==false,onAlternative:r=>alternative=r});
+ if(alternative?.status==='ok'&&alternative.etaSeconds<result.etaSeconds-1){
+  const original=result;result=alternative;result.explanation=explainRoute(result,data);
+  const gain=original.etaSeconds-result.etaSeconds,reason=`De eerste vergelijkingsroute bleek ${Math.round(gain)} s sneller dan de oorspronkelijke zoekroute en is daarom overgenomen. Dit vergelijkt twee volledige begrensde routes; het bewijst geen globale optimaliteit.`;
+  result.explanation.comparison={status:'compared',chosenHeading:result.path[1]?.heading,alternativeHeading:original.path[1]?.heading,chosenVmgKnots:result.explanation.segments[0]?.vmgKnots,alternativeVmgKnots:original.explanation.segments[0]?.vmgKnots,chosenEtaSeconds:result.etaSeconds,alternativeEtaSeconds:original.etaSeconds,etaGainSeconds:gain,reason};
+  result.explanation.summary=`De route bevat ${result.explanation.segments.length} berekende vaarstappen met de gebruikte wind, stroming en polar. ${reason}`;
+ }
+
  if(missingCurrent.size)result.warnings.push('Stromingsmodel ontbreekt voor onderzochte posities of routetijden; routezoeker mijdt die cellen en kan de route daarom omleggen of blokkeren. Onbekende cellen zijn niet als nulstroming gebruikt. '+[...missingCurrent].join(' '));
  else if(input.current==null&&result.status==='ok')result.warnings.push('Koers gecorrigeerd met RWS stromingsverwachting per positie en routetijd; dit is een model, geen meting.');
  return result;
 }
 if(typeof WorkerGlobalScope!=='undefined'&&self instanceof WorkerGlobalScope)self.onmessage=async({data})=>{try{self.postMessage({result:await calculateWorkerRoute(data)});}catch(error){self.postMessage({error:error.message});}};
+
 
 

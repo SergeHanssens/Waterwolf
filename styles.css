@@ -9,3 +9,5 @@
 #waterDataStatus{font-size:12px;line-height:1.7;margin:12px 0}#currentModelStatus{display:block;margin-bottom:12px}.map-data-controls{margin-bottom:12px}
 
 .legend{display:grid;grid-template-columns:1fr 1fr;line-height:1.6}.legend span{display:flex;gap:8px;align-items:center}.legend .route-line{display:inline-block;flex-shrink:0}.maker-brand img{width:160px;max-height:65px;object-fit:contain}#map .current-layer{opacity:var(--current-opacity,.35)}@media(max-width:520px){.legend{grid-template-columns:1fr}}
+
+.route-briefing{padding:14px;border:1px solid var(--line);border-radius:8px;margin:16px 0;font-size:13px;line-height:1.65}.route-briefing details{margin:12px 0}.route-briefing summary{cursor:pointer;font-weight:600}.route-briefing ol{padding-left:22px}.route-briefing li{margin-bottom:10px}

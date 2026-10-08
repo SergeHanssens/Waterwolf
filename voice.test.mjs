@@ -5,3 +5,6 @@ test('ambiguous values and arbitrary commands never become actions',()=>{for(con
 test('read only and cancellation commands are deterministic',()=>{assert.equal(parse('Wat is de koers?').type,'read_course');assert.equal(parse('annuleer').type,'cancel');assert.equal(parse('bevestig').type,'confirm');assert.equal(parse('we zijn overstag gegaan').type,'log_tack');});
 
 test('unique proposal aliases and compound Dutch numbers',()=>{assert.equal(parse('gebruik basis',{configurations:['Voorstel · Basis']}).value,'Voorstel · Basis');assert.equal(parse('gebruik basis',{configurations:['Basis','Voorstel · Basis']}).type,'unknown');assert.equal(parse('heading tweehonderdzeventig').value,270);assert.equal(parse('windrichting eenennegentig graden').value,91);});
+
+test("route reasoning is a read-only spoken command",()=>{for(const text of ["waarom deze route","waarom deze koers","leg de route uit"]){const c=parse(text);assert.equal(c.type,"read_reason");assert.equal(c.confirmationRequired,false);}});
+

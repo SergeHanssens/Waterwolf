@@ -1,4 +1,4 @@
-import {speechDefaults,matchingVoices,knownVoiceGender,setSpeechSettings,applySpeechSettings} from './speech.js?v=0.6.1';
+import {speechDefaults,matchingVoices,knownVoiceGender,setSpeechSettings,applySpeechSettings} from './speech.js?v=0.6.2';
 export const defaultSettings={leadSeconds:120,tackSeconds:90,gybeSeconds:120,sailChangeSeconds:180,volume:.7,vibrate:true,vibrationPattern:'normal',tone:true,speech:true,screenMessage:true,systemNotification:false,...speechDefaults};
 export function vibrationPattern(level){return {light:[120],normal:[200,100,200],strong:[350,120,350,120,350]}[level]||[200,100,200];}
 let audioContext,toastTimeout;
