@@ -19,3 +19,7 @@ Claude Code heeft app en engine gelezen en concrete gebreken gemeld. Stroomcompe
 ## Nog nodig voor gebruik in de echte race
 
 Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen diepgang, kielspeling en manoeuvretijden. Betrouwbare nautische diepte-/obstakel-/stroomgegevens ontbreken als automatische feed. Geometrische boeipassage is geen juridische wedstrijdvalidatie; daadwerkelijke passage moet door de bemanning worden bevestigd.
+
+## Spraakbediening 0.3.0
+
+38 automatische tests slagen, waaronder Nederlandse getallen, onbekende opdrachten, bevestiging, verval na dertig seconden en veranderde baancontext. In de browser is de invoerroute getest: “wind dertien knopen” wijzigt de wind; “volgende boei” vraagt bevestiging en verandert nog niets; “bevestig” activeert Finish. De fysieke microfoon, daadwerkelijke herkenning en hoorbaarheid zijn niet getest.

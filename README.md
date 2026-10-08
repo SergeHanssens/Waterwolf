@@ -46,3 +46,9 @@ Race, profielen en track staan lokaal in de browser. Export bevat locatiegegeven
 `npm test` voert de reken- en begrenzingstests uit. Zie [architectuur](ARCHITECTURE.md), [brononderzoek](research.md) en [testverslag](VALIDATION.md). Waterwolf-basismaten zijn gecontroleerd bij [Holland Sail](https://www.hollandsail.nl/schepen/37/waterwolf). De officiële [Klipperrace-bepalingen](https://klipperrace.nl/bepalingen) en wijzigingen zijn leidend; de bindende PDF V1.1 is gelezen. Acht RWS-boeiposities zijn beschikbaar; definitieve baan, rondingszijde, startpositie en finishlichtcoördinaten vragen bevestiging aan boord.
 
 MIT License · Copyright © 2026 Serge Hanssens.
+
+## Spraakbediening
+
+Druk op **Start luisteren** en geef je browser microfoontoegang. Voorbeelden: “wat is de koers”, “lees de volgende actie”, “wind twaalf knopen”, “windrichting tweehonderdzeventig”, “volgende boei” en “welke zeilen”. De app spreekt het antwoord en de uitgevoerde wijziging uit. Baan-, positie-, start- en zeilwijzigingen vragen “bevestig” binnen dertig seconden; “annuleer” wist de opdracht. Zeilopdrachten registreren de gekozen configuratie; de bemanning voert de handeling uit.
+
+Spraakherkenning gebruikt de mogelijkheden van de telefoonbrowser en kan online worden verwerkt door diens spraakdienst. Het is een begrensde Nederlandse opdrachtenset. Zonder beschikbare herkenning kun je dezelfde opdrachten typen. Geluidsvolume en gesproken bemanningsmeldingen stel je in onder **Instellingen**. Test microfoon, verstaanbaarheid, batterij en meldingen op je eigen telefoon vóór vertrek; achtergrondwerking is niet gegarandeerd.
