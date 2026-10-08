@@ -1,4 +1,4 @@
-import {routeRace} from './engine.js?v=0.2.1';
+import {routeRace} from './engine.js?v=0.2.2';
 self.onmessage=({data})=>{try{
  if(data.forecastWind?.length){
   const samples=data.forecastWind,base=data.forecastBaseMs;
