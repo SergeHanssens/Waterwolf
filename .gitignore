@@ -6,3 +6,5 @@ validation-screenshots/
 icons/captain-original.png
 .bathymetry-tools/
 data/bathymetry-source-*
+
+__pycache__/

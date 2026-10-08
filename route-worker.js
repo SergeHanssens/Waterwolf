@@ -1,5 +1,5 @@
-import {loadBathymetry,depthAt} from './bathymetry.js?v=0.5.0';
-import {routeRace} from './engine.js?v=0.5.0';
+import {loadBathymetry,depthAt} from './bathymetry.js?v=0.5.1';
+import {routeRace} from './engine.js?v=0.5.1';
 self.onmessage=async({data})=>{try{
  if(data.waterLevels?.some(s=>s.levelM!==null&&Date.now()-Date.parse(s.timestamp)<=1800000)){try{await loadBathymetry();data.depthAt=p=>depthAt(p,data.waterLevels,{maxAgeSeconds:1800}).depthM;}catch{}}
  if(data.forecastWind?.length){
