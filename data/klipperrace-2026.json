@@ -1,33 +1,140 @@
 {
   "name": "51e Enkhuizer Klipperrace",
-  "dates": ["2026-10-10", "2026-10-11"],
+  "dates": [
+    "2026-10-10",
+    "2026-10-11"
+  ],
   "timezone": "Europe/Amsterdam",
   "verifiedAt": "2026-10-08",
   "source": "https://klipperrace.nl/bepalingen",
   "bindingDocument": "https://klipperrace.nl/public/media/2026/wedstrijdbepalingen_klipperrace_2026.pdf",
-  "verificationStatus": "HTML gelezen; bindende PDF kon niet worden opgehaald; palaver en wijzigingen verplicht controleren",
+  "verificationStatus": "Officiële PDF V1.1 van 15-09-2026 gelezen op 08-10-2026; palaver en wijzigingen blijven verplicht controleren",
   "palaverLocalTime": "08:00",
   "scheduledFirstAttentionLocalTime": "09:50",
   "raceStartLocalTime": null,
-  "start": {"type": "assigned-anchor-or-committee-line", "coordinates": null},
-  "finish": {"type": "line", "description": "Groene licht ingang Compagnieshaven tot rode licht kop Oostdam", "endpoints": [null, null]},
+  "start": {
+    "type": "assigned-anchor-or-committee-line",
+    "coordinates": null
+  },
+  "finish": {
+    "type": "line",
+    "description": "Groene licht ingang Compagnieshaven tot rode licht kop Oostdam",
+    "endpoints": [
+      null,
+      null
+    ]
+  },
   "anchorStartSailsBeforeSignalAllowed": false,
   "committeeVhf": 88,
   "tackRoomVhf": 10,
   "courseConfirmed": false,
   "marks": [
-    {"name":"Sport C","coordinates":null},
-    {"name":"ST1 SB2","coordinates":null},
-    {"name":"ST 11","coordinates":null},
-    {"name":"EZ D","coordinates":null},
-    {"name":"EZ C","coordinates":null},
-    {"name":"EZ A","coordinates":null},
-    {"name":"EL A","coordinates":null},
-    {"name":"LC 11","coordinates":null},
-    {"name":"De Kreupel","type":"island-obstacle","coordinates":null}
+    {
+      "name": "Sport C",
+      "coordinates": {
+        "lat": 52.80001944,
+        "lon": 5.15001944
+      },
+      "officialName": "SPORT C",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/bc71eef6-f110-5e37-9ded-6c4e43d266d3?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "ST1 SB2",
+      "coordinates": {
+        "lat": 52.84281389,
+        "lon": 5.32302222
+      },
+      "officialName": "ST 1-SB 2",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/64a3654d-7d88-5669-bc66-41bfa0a4a166?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "ST 11",
+      "coordinates": {
+        "lat": 52.86162778,
+        "lon": 5.34426389
+      },
+      "officialName": "ST 11",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/4fa8b660-7e6b-5e56-af4a-f7e8a3a4bc34?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "EZ D",
+      "coordinates": {
+        "lat": 52.67918056,
+        "lon": 5.49848611
+      },
+      "officialName": "EZ-D",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/2f81c9c9-70ba-5822-9d95-a6282732536b?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "EZ C",
+      "coordinates": {
+        "lat": 52.70963056,
+        "lon": 5.43662778
+      },
+      "officialName": "EZ-C",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/8568f9a1-9b4b-5268-9321-f8f5d0e249c2?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "EZ A",
+      "coordinates": {
+        "lat": 52.78210833,
+        "lon": 5.30162778
+      },
+      "officialName": "EZ-A",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/22343aa5-6be2-5f0a-adee-d786b1deee50?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "EL A",
+      "coordinates": {
+        "lat": 52.75291944,
+        "lon": 5.44414167
+      },
+      "officialName": "EL A",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/caad8df0-2c5f-5ddf-b0d2-7dabcc07d9cd?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "LC 11",
+      "coordinates": {
+        "lat": 52.81031944,
+        "lon": 5.30326389
+      },
+      "officialName": "LC 11",
+      "source": "https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections/vaarweg_markeringen_drijvend_rd/items/75582c77-6174-5074-8733-e2199cc41389?f=json",
+      "verifiedAt": "2026-10-08",
+      "datasetUpdatedAt": "2026-10-04",
+      "caveat": "Controleer actuele positie, officiële baan en verplichte rondingszijde tijdens palaver."
+    },
+    {
+      "name": "De Kreupel",
+      "type": "island-obstacle",
+      "coordinates": null
+    }
   ],
   "selectedCourse": null,
   "saturdayFinishDeadlineLocalTime": "19:00",
   "officialNoticeboard": "Klipperrace-26 officiële bord (WhatsApp)",
-  "note": "Geen boeicoördinaten uit actuele officiële kaart bevestigd. Neem geen historische boeiposities over."
+  "note": "Boeiposities RWS/PDOK dataset 04-10-2026; geen bevestiging van de gekozen wedstrijdbaan. Start/finishlichtcoördinaten en Kreupel-hindernisgeometrie nog onbekend.",
+  "bindingDocumentVersion": "V1.1 15-09-2026",
+  "sundayFinishDeadlineLocalTime": "16:00"
 }

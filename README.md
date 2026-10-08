@@ -4,7 +4,9 @@ Mobiele zeilbuddy voor wedstrijdscenario's, bemanningsvoorbereiding en het verza
 
 ## Starten
 
-Open een terminal in deze map en voer `npm start` uit. Open daarna **http://localhost:4173**. Node.js 22 of hoger; geen externe pakketten nodig. Rechtstreeks dubbelklikken op index.html ondersteunt geen modules, GPS of offline installatie.
+De openbare PWA staat op **https://sergehanssens.github.io/Waterwolf/**.
+
+Open voor lokaal gebruik een terminal in deze map en voer `npm start` uit. Open daarna **http://localhost:4173**. Node.js 22 of hoger; geen externe pakketten nodig. Rechtstreeks dubbelklikken op index.html ondersteunt geen modules, GPS of offline installatie.
 
 Op een telefoon: publiceer de bestanden op HTTPS, bijvoorbeeld GitHub Pages. Open de website in Chrome op Android en kies **Installeren / Toevoegen aan startscherm**. Op iPhone gebruik je Safari → Delen → Zet op beginscherm. Installeer terwijl er internet is; de app-shell werkt daarna offline. Kaarttegels en nieuwe voorspellingen hebben internet nodig.
 
@@ -41,6 +43,6 @@ Race, profielen en track staan lokaal in de browser. Export bevat locatiegegeven
 
 ## Validatie en bronnen
 
-`npm test` voert de reken- en begrenzingstests uit. Zie [architectuur](ARCHITECTURE.md), [brononderzoek](research.md) en [testverslag](VALIDATION.md). Waterwolf-basismaten zijn gecontroleerd bij [Holland Sail](https://www.hollandsail.nl/schepen/37/waterwolf). De officiële [Klipperrace-bepalingen](https://klipperrace.nl/bepalingen) en wijzigingen zijn leidend; de bindende PDF en boeicoördinaten moeten nog aan boord gecontroleerd worden.
+`npm test` voert de reken- en begrenzingstests uit. Zie [architectuur](ARCHITECTURE.md), [brononderzoek](research.md) en [testverslag](VALIDATION.md). Waterwolf-basismaten zijn gecontroleerd bij [Holland Sail](https://www.hollandsail.nl/schepen/37/waterwolf). De officiële [Klipperrace-bepalingen](https://klipperrace.nl/bepalingen) en wijzigingen zijn leidend; de bindende PDF V1.1 is gelezen. Acht RWS-boeiposities zijn beschikbaar; definitieve baan, rondingszijde, startpositie en finishlichtcoördinaten vragen bevestiging aan boord.
 
 MIT License · Copyright © 2026 Serge Hanssens.
