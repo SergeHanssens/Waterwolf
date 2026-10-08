@@ -6,3 +6,4 @@
 .map-controls{display:flex;gap:8px;margin-bottom:10px}dialog{border:1px solid var(--line);border-radius:16px;padding:24px;max-width:min(92vw,580px);color:var(--ink)}dialog::backdrop{background:#102c3b99}#avatarDialog img{width:100%;max-width:512px;border-radius:16px}dialog button{margin:5px}#map{touch-action:none;cursor:grab}
 
 .map-move-bar{background:#fff5ef;border:2px solid #e77655;border-radius:10px;padding:12px;margin:12px 0}.map-move-bar p{margin:0 0 8px;font-size:13px}
+#waterDataStatus{font-size:12px;line-height:1.7;margin:12px 0}#currentModelStatus{display:block;margin-bottom:12px}.map-data-controls{margin-bottom:12px}

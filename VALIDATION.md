@@ -18,7 +18,7 @@ Claude Code heeft app en engine gelezen en concrete gebreken gemeld. Stroomcompe
 
 ## Nog nodig voor gebruik in de echte race
 
-Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen diepgang, kielspeling en manoeuvretijden. Betrouwbare nautische diepte-/obstakel-/stroomgegevens ontbreken als automatische feed. Geometrische boeipassage is geen juridische wedstrijdvalidatie; daadwerkelijke passage moet door de bemanning worden bevestigd.
+Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen diepgang, kielspeling en manoeuvretijden. Actuele nautische editie per kaartcel en numerieke stroomvelden zijn nog niet volledig gekoppeld; historische bodemschatting blijft onzeker. Geometrische boeipassage is geen juridische wedstrijdvalidatie; daadwerkelijke passage moet door de bemanning worden bevestigd.
 
 ## Spraakbediening 0.3.0
 
@@ -31,3 +31,10 @@ Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen
 ## Verplaatsen 0.4.1
 
 Bestaande boot en wedstrijdpunten hebben een Verplaats-knop. Nieuwe positie verschijnt als voorstel met apart OK/Annuleer. Browsercontrole: verplaatsen van niet-actieve Boei 1 bewaart uitsluitend die boei na OK; annuleren na een ander voorstel behoudt vorige coördinaten.
+
+
+## Officiële RWS-gegevens 0.5.0
+
+Automatische tests uitgebreid met NAP-datums en eenheden, ontbrekende cellen, verouderde en toekomstige metingen, conservatieve bodemwaarden, meergrens, bronhashupdates en stromingsmodelrun/tijd. Browser toont verse RWS-stationswaterstanden, historische diepteschatting en twee geladen stromingslagen. Negatieve modeldiepte wordt als niet bevaarbaar aangeduid. Bronvoorbeelden: Enkhuizen -0.25 m NAP, Lemmer -0.23 m NAP en Enkhuizen Markermeer -0.31 m NAP op 8 oktober 2026; deze zijn tijdgebonden, geen vaste waarden. Officiële ENC-kaartdekking rond De Kreupel visueel bevestigd door brononderzoek. Scheduler en live productie moeten afzonderlijk worden gecontroleerd.
+
+53 automatische tests slagen in 0.5.0. In de browser zijn drie officiële RWS-kaartbeelden geladen zonder JavaScript-fouten: ENC + IJsselmeer- en Markermeer-stroming. Nautische kaartbeelden rond Enkhuizen zijn ook visueel gecontroleerd.

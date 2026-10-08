@@ -4,3 +4,5 @@ node_modules/
 tmp/
 validation-screenshots/
 icons/captain-original.png
+.bathymetry-tools/
+data/bathymetry-source-*

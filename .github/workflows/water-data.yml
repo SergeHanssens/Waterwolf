@@ -1,0 +1,34 @@
+name: RWS waterstanden vernieuwen
+on:
+  schedule:
+    - cron: '3,13,23,33,43,53 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - water-levels.js
+      - scripts/update-water-levels.mjs
+      - .github/workflows/water-data.yml
+permissions:
+  contents: write
+concurrency:
+  group: rws-data-update
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-water-levels.mjs
+      - name: Publiceer verse stationsmetingen
+        run: |
+          git config user.name 'Waterwolf broncontrole'
+          git config user.email 'waterwolf-data@users.noreply.github.com'
+          git add data/water-levels-latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Vernieuw officiële RWS-waterstanden'
+            git pull --rebase
+            git push
+          fi

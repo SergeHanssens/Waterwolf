@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {parseCurrentCapabilities,overlayURLs,getCurrent} from './current-model.js';
+const xml='<Layer><Name>-ijsselmeer_fm_harmonie--stroom--2026-10-08T06:00:00Z</Name><Dimension name="time">2026-10-08T12:00:00Z</Dimension></Layer><Layer><Name>-ijsselmeer_fm_harmonie--stroom--2026-10-08T12:00:00Z</Name><Dimension name="time">2026-10-08T19:00:00Z,2026-10-08T20:00:00Z,2026-10-10T12:00:00Z</Dimension></Layer>';
+const now=Date.parse('2026-10-08T20:10:00Z'),model=parseCurrentCapabilities(xml,now);
+assert.equal(model.models[0].runAt,'2026-10-08T12:00:00Z');assert.equal(model.models[0].validAt,'2026-10-08T20:00:00Z');
+const urls=overlayURLs(model,{bbox:[550000,6880000,640000,7010000],time:now});assert.equal(urls.length,1);assert.equal(new URL(urls[0]).searchParams.get('TIME'),'2026-10-08T20:00:00Z');
+assert.equal(overlayURLs(model,{bbox:[550000,6880000,640000,7010000],time:Date.parse('2026-10-12T20:00:00Z')}).length,0);
+assert.equal(parseCurrentCapabilities(xml,Date.parse('2026-10-09T20:00:00Z')).models[0].stale,true);
+assert.equal((await getCurrent({lat:52.7,lon:5.3})).speedKnots,null);
+console.log('Current model validation passed: newest run, explicit time, forecast validity and unavailable numeric vectors.');

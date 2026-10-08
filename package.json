@@ -1,10 +1,10 @@
 {
   "name": "shifted-make-race-tactician",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test engine.test.mjs timing.test.mjs settings.test.mjs voice.test.mjs voice-controller.test.mjs speech.test.mjs",
+    "test": "node --test engine.test.mjs timing.test.mjs settings.test.mjs voice.test.mjs voice-controller.test.mjs speech.test.mjs bathymetry.test.mjs water-levels.test.mjs current-model.test.mjs",
     "start": "node server.mjs"
   }
 }

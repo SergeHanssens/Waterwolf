@@ -35,3 +35,26 @@ Advies moet bron, meettijd, onzekerheid en ontbrekende invoer tonen. Een demonst
 [RWS/PDOK vaarwegmarkeringen](https://api.pdok.nl/rws/vaarwegmarkeringen-nederland/ogc/v1/collections?f=json) is CC0 en bijgewerkt 04-10-2026. Acht exacte namen, inclusief samengestelde ST 1-SB 2, aan wedstrijdbepalingen gekoppeld. Dit zijn bronposities, geen garantie dat de boei ter plaatse onverplaatst is.
 
 [Vaart verslag 2004](https://www.vaart.nl/actueel/artikel/1000008712/_waterwolf__wint_driesteden_race_in_30_ste_klipperrace) bevestigt historische winst met Urk–Medemblik en beschrijft een veranderende wind; geen prestatiepolar of hedendaagse koersinstructie hieruit afgeleid. Facebook en Pindat konden via webtool niet worden gelezen.
+
+## Publieke operationele stromingsvelden — aanvullend bevestigd
+
+Op 8 oktober 2026 rechtstreeks gecontroleerd: de [officiële RWsOS Viewer](https://rwsos-dataservices-prod.avi.deltares.nl/rwsos-viewer/) verwijst naar [Matroos Open WMS](https://rwsos.rws.nl/matroos-open/wms?SERVICE=WMS&REQUEST=GetCapabilities). Capabilities bevatten expliciete IJsselmeer- en Markermeer-stromingsmodellen `ijsselmeer_fm_harmonie` en `markermeer_fm_harmonie`. Laatste gevonden rekenrun 12:00 UTC, uurlijkse geldigheid tot 10 oktober 12:00 UTC. GetMap voor beide wateren retourneerde echte PNG-kaarten. D-Flow FM modelverwachting, geen gemeten stroming. Expliciet TIME meegeven: standaardtijd is het einde van de voorspelling. Daarom dynamisch laatste run ontdekken en actuele geldigheid selecteren.
+
+De kaart bevat gecombineerde `velu`/`velv`-parameters en stijlen `Stroomsnelheid.laag` en `Stroomsnelheid.normaal`. Ondanks queryable-vlag biedt deze WMS uitsluitend GetCapabilities/GetMap; GetFeatureInfo gaf InvalidRequest. Numerieke snelheid/richting blijft daarom onbekend in de router. Niet uit kaartkleuren afleiden. Dit corrigeert de eerdere conclusie dat geen openbaar operationeel binnenwaterstromingsmodel was bevestigd: een openbare modelkaart is nu wel bevestigd, een bruikbare numerieke vector-API nog niet.
+
+[PredictWind huidige documentatie](https://help.predictwind.com/en/articles/9016502-predictcurrent-current-map) beschrijft getij-/oceanische modellen en eigen data. Geen expliciete inlanddekking voor deze afgesloten meren bevestigd; geen claim dat een zeemodel deze meren correct berekent. [KNMI maritiem](https://www.knmi.nl/nederland-nu/maritiem/coastal-waters) dekt IJsselmeer/Marken voor wind, maar levert daar geen stromingsvectoren.
+
+## Geverifieerde waterstandenintegratie
+
+`water-levels.js` vraagt de nieuwe RWS DDAPI20 over laatste zes uur op: WATHTE, OW, NAP en meting. Unit uit respons wordt strikt op cm/m gecontroleerd; kwaliteitscodes conform Waterinfo; gemiddelde of oude historische reeksen uitgesloten. Actuele metingen gevonden bij Krabbersgat IJsselmeer, Lemmer IJsselmeer en Krabbersgat Markermeer. Stationcodes Enkhuizen/Urk blijken historische reeksen; diverse modern klinkende cataloguscodes leveren geen recente waarden. Deze blijven expliciet ontbrekend, nooit nul.
+
+Browser-CORS ontbreekt op DDAPI20; daarom snapshotroute via `scripts/update-water-levels.mjs` en JSON. Freshness volgt meettijd, niet downloadtijd. Boven 30 minuten verouderd. Naam, coördinaten en basin staan bij elke bron; een waterstand uit het ene meer mag geen diepteberekening in het andere meer voeden. Geverifieerde snapshot is een momentopname, automatische actualisering hangt af van de ingestelde taak en dienstbeschikbaarheid.
+
+### Official ENC portrayal verification
+The public Rijkswaterstaat Maritime Chart Service was visually checked on 8 October 2026. An EPSG:3857 GetMap with layers 1–9 and bbox `585000,6921500,595000,6931500` returned an actual chart image around Enkhuizen, its harbours and the Houtribdijk, including navigation symbols and channel lines. A second 10 km view near De Kreupel also showed chart features. Wider views can show boundaries or omit chart detail. The hatching is part of the service portrayal and should not be silently stripped.
+
+Service: https://geo.rijkswaterstaat.nl/arcgis/rest/services/ENC/mcs_inland/MapServer/exts/MaritimeChartService/WMSServer
+Official ENC distribution: https://www.vaarweginformatie.nl/frp/page/infra_enc
+RWS explanation: https://www.rijkswaterstaat.nl/zakelijk/zakendoen-met-rijkswaterstaat/werkwijzen/werkwijze-in-gww/data-eisen-rijkswaterstaatcontracten/elektronische-vaarwegkaarten
+
+Live portrayal is feasible immediately. Per-cell edition dates and exact ZIP download URLs have not been established; a successful request is not evidence of a newly surveyed depth or of the PWA being a certified navigation system. `nautical-chart.js` therefore records the check time and leaves `editionAt` null.
