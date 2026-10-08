@@ -1,5 +1,5 @@
 /** Numeric explanations of sampled route decisions; never invents forecast shifts or optimality. */
-import {bearingDeg,evaluateHeading,routeRace} from './engine.js?v=0.6.2';
+import {bearingDeg,evaluateHeading,routeRace} from './engine.js?v=0.6.3';
 const delta=(a,b)=>((a-b+540)%360)-180,round=(v,n=1)=>Number.isFinite(v)?Number(v.toFixed(n)):null;
 const at=(source,p,t)=>typeof source==='function'?source(p,t):source;
 export function explainRoute(result,options,{compareAlternatives=false,onAlternative}={}){

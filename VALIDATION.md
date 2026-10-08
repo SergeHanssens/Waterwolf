@@ -46,3 +46,6 @@ Claude controleerde ook de afgeronde automatische stroomcorrectie (0.6.1): geen 
 
 ## Routebriefing 0.6.2
 Claude Code las ook de afgeronde routebriefing en alternatieve routevergelijking: geen blokkerende bugs. Dubbele vergelijkingstekst weggehaald; winst onder één seconde geldt niet als betekenisvolle verbetering. 67 tests geslaagd, inclusief werkelijk overnemen van een 61 seconden snellere variant. Browserdemo toont 130 onderbouwde stappen en een aanvankelijk tragere koers die binnen het model 69 seconden eerder aankomt.
+
+## Opgeslagen oude demo 0.6.3
+Exacte oorspronkelijke DEMO · Oefenbaan wordt bij opstarten vervangen door de opgenomen Waterwolf-track 2025, met expliciet oefenscenario nulstroming. Aangepaste banen worden behouden; vorige demo blijft beschikbaar in de JSON-export. Twee migratietests bewaken herkenning en behoud. Generieke ongeldige-stromingtekst vervangen door de concrete modelcelmelding voor automatische bronuitval. Lokale volledige testset: 69/69 geslaagd.

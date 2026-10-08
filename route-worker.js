@@ -1,7 +1,7 @@
-import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.2';
-import {routeRace} from './engine.js?v=0.6.2';
-import {explainRoute} from './explanation.js?v=0.6.2';
-import {currentFromField} from './current-field.js?v=0.6.2';
+import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.3';
+import {routeRace} from './engine.js?v=0.6.3';
+import {explainRoute} from './explanation.js?v=0.6.3';
+import {currentFromField} from './current-field.js?v=0.6.3';
 /** Shared entry point for worker execution and integration tests. Manual current wins. */
 export async function calculateWorkerRoute(input){
  const data={...input},missingCurrent=new Set();
@@ -22,8 +22,8 @@ export async function calculateWorkerRoute(input){
   result.explanation.summary=`De route bevat ${result.explanation.segments.length} berekende vaarstappen met de gebruikte wind, stroming en polar. ${reason}`;
  }
 
- if(missingCurrent.size)result.warnings.push('Stromingsmodel ontbreekt voor onderzochte posities of routetijden; routezoeker mijdt die cellen en kan de route daarom omleggen of blokkeren. Onbekende cellen zijn niet als nulstroming gebruikt. '+[...missingCurrent].join(' '));
- else if(input.current==null&&result.status==='ok')result.warnings.push('Koers gecorrigeerd met RWS stromingsverwachting per positie en routetijd; dit is een model, geen meting.');
+ if(missingCurrent.size&&result.status!=='ok'){result.warnings=result.warnings.filter(w=>w!=='Ongeldige stroming: richting en niet-negatieve snelheid vereist.');result.warnings.push('Stromingsmodel ontbreekt voor onderzochte posities of routetijden; onbekende cellen zijn niet als nulstroming gebruikt. '+[...missingCurrent].join(' '));}
+ if(input.current==null&&result.status==='ok'){result.warnings.push('Koers gecorrigeerd met RWS stromingsverwachting per positie en routetijd; dit is een model, geen meting.');if(missingCurrent.size)result.warnings.push('De routezoeker heeft bij het onderzoeken van varianten ontbrekende stroomcellen vermeden. De gekozen vaarstappen gebruiken geldige stroomwaarden.');}
  return result;
 }
 if(typeof WorkerGlobalScope!=='undefined'&&self instanceof WorkerGlobalScope)self.onmessage=async({data})=>{try{self.postMessage({result:await calculateWorkerRoute(data)});}catch(error){self.postMessage({error:error.message});}};

@@ -1,0 +1,2 @@
+// Only the exact shipped legacy course is eligible; edited races are preserved.
+export function isLegacyDemo(state){const expected=[['Start',52.73,5.3,'lijn'],['Boei 1',52.76,5.34,'bakboord'],['Finish',52.72,5.35,'lijn']];return !!state?.demo&&!state.historicalReplay&&state.race?.name==='DEMO · Oefenbaan'&&!state.race.start&&state.race.points?.length===3&&state.race.points.every((p,i)=>p.name===expected[i][0]&&Number(p.lat)===expected[i][1]&&Number(p.lon)===expected[i][2]&&p.rounding===expected[i][3]&&!p.lat2&&!p.lon2);}

@@ -1,4 +1,4 @@
-import {parseVoiceCommand} from './voice.js?v=0.6.2';
+import {parseVoiceCommand} from './voice.js?v=0.6.3';
 export function createVoiceController({getState,execute,now=()=>Date.now()}){
  let pending=null;
  const context=()=>JSON.stringify({race:getState().race.name,points:getState().race.points,active:getState().active});
