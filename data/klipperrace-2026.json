@@ -1,0 +1,33 @@
+{
+  "name": "51e Enkhuizer Klipperrace",
+  "dates": ["2026-10-10", "2026-10-11"],
+  "timezone": "Europe/Amsterdam",
+  "verifiedAt": "2026-10-08",
+  "source": "https://klipperrace.nl/bepalingen",
+  "bindingDocument": "https://klipperrace.nl/public/media/2026/wedstrijdbepalingen_klipperrace_2026.pdf",
+  "verificationStatus": "HTML gelezen; bindende PDF kon niet worden opgehaald; palaver en wijzigingen verplicht controleren",
+  "palaverLocalTime": "08:00",
+  "scheduledFirstAttentionLocalTime": "09:50",
+  "raceStartLocalTime": null,
+  "start": {"type": "assigned-anchor-or-committee-line", "coordinates": null},
+  "finish": {"type": "line", "description": "Groene licht ingang Compagnieshaven tot rode licht kop Oostdam", "endpoints": [null, null]},
+  "anchorStartSailsBeforeSignalAllowed": false,
+  "committeeVhf": 88,
+  "tackRoomVhf": 10,
+  "courseConfirmed": false,
+  "marks": [
+    {"name":"Sport C","coordinates":null},
+    {"name":"ST1 SB2","coordinates":null},
+    {"name":"ST 11","coordinates":null},
+    {"name":"EZ D","coordinates":null},
+    {"name":"EZ C","coordinates":null},
+    {"name":"EZ A","coordinates":null},
+    {"name":"EL A","coordinates":null},
+    {"name":"LC 11","coordinates":null},
+    {"name":"De Kreupel","type":"island-obstacle","coordinates":null}
+  ],
+  "selectedCourse": null,
+  "saturdayFinishDeadlineLocalTime": "19:00",
+  "officialNoticeboard": "Klipperrace-26 officiële bord (WhatsApp)",
+  "note": "Geen boeicoördinaten uit actuele officiële kaart bevestigd. Neem geen historische boeiposities over."
+}

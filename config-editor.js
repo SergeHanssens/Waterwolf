@@ -1,0 +1,13 @@
+const byId=id=>document.getElementById(id);
+const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const parse=id=>{try{return JSON.parse(byId(id).value)||[];}catch{return [];}};
+export function renderEditors(){
+ for(const kind of ['polar','sails']){
+  let host=byId(kind+'Editor');
+  if(!host){host=document.createElement('div');host.id=kind+'Editor';byId(kind).parentElement.before(host);byId(kind).parentElement.hidden=true;}
+  const rows=parse(kind);
+  host.innerHTML=`<h3>${kind==='polar'?'Gemeten vaarsnelheden':'Zeilconfiguraties'}</h3><p class="muted">${kind==='polar'?'Vul per ware windhoek de gemeten vaarsnelheid in. Deze tabel geldt voor één windsterkte.':'Geef elke combinatie een naam, een windbereik en de zeilen die daarbij horen. Gebruik grenzen die de kapitein bevestigt.'}</p><div class="editor-rows">${rows.map((row,i)=>kind==='polar'?`<div class="form-grid" data-row="${i}"><label>Windhoek (°)<input type="number" min="0" max="180" data-property="twa" value="${row.twa}"></label><label>Snelheid (kn)<input type="number" min="0" step=".1" data-property="speedKnots" value="${row.speedKnots}"></label><button type="button" data-remove="${i}">Verwijder</button></div>`:`<div class="waypoint" data-row="${i}"><div class="form-grid"><label>Naam<input data-property="name" value="${escape(row.name)}"></label><label>Vanaf wind (kn)<input type="number" min="0" step=".1" data-property="minWindKn" value="${row.minWindKn}"></label><label>Tot wind (kn)<input type="number" min="0" step=".1" data-property="maxWindKn" value="${row.maxWindKn}"></label><label>Zeilen (komma tussen namen)<input data-property="sails" value="${escape((row.sails||[]).join(', '))}"></label><button type="button" data-remove="${i}">Verwijder</button></div></div>`).join('')}</div><button type="button" data-add>+ ${kind==='polar'?'Windhoek':'Zeilconfiguratie'}</button>`;
+  host.oninput=e=>{const row=e.target.closest('[data-row]');if(!row||!e.target.dataset.property)return;const key=e.target.dataset.property;rows[Number(row.dataset.row)][key]=key==='sails'?e.target.value.split(',').map(s=>s.trim()).filter(Boolean):e.target.type==='number'?Number(e.target.value):e.target.value;byId(kind).value=JSON.stringify(rows);};
+  host.onclick=e=>{if(e.target.hasAttribute('data-add')){rows.push(kind==='polar'?{twa:90,speedKnots:0}:{name:'Nieuwe combinatie',sails:[],minWindKn:0,maxWindKn:0});byId(kind).value=JSON.stringify(rows);renderEditors();}else if(e.target.hasAttribute('data-remove')){rows.splice(Number(e.target.dataset.remove),1);byId(kind).value=JSON.stringify(rows);renderEditors();}};
+ }
+}

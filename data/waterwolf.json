@@ -1,0 +1,20 @@
+{
+  "name": "Waterwolf",
+  "verifiedAt": "2026-10-08",
+  "source": "https://www.hollandsail.nl/schepen/37/waterwolf",
+  "captain": "Olaf Busser",
+  "type": "Klipper",
+  "rig": "Kits getuigd",
+  "lengthM": 35.5,
+  "beamM": 6.25,
+  "publishedDraftM": 1.4,
+  "airDraftM": 29,
+  "yearBuilt": 1899,
+  "publishedSailAreaM2": 400,
+  "sailAreaNote": "De beschrijving vermeldt ook tuigage tot 1000 m²; wedstrijdinventaris door schipper te bevestigen.",
+  "raceDraftM": null,
+  "polar": null,
+  "sailInventory": [],
+  "maneuverDurations": null,
+  "calibrationStatus": "unverified"
+}
