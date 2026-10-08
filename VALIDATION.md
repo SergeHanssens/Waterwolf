@@ -27,3 +27,7 @@ Bevestigde baan en palaverwijzigingen; Waterwolf-polar en zeilgarderobe; beladen
 ## Kaart en stemmen 0.4.0
 
 42 automatische tests slagen. Browsercontrole: kaart standaard aan; zoom en kaartactievenster; annuleren; expliciete verwijdermogelijkheid bij boot; grote avatar; spreeksnelheid 0.5 en mannenvoorkeur bewaard na herladen. Toestel bood Microsoft Bart voor nl-BE: extra vrouwelijke/andere stemmen zijn niet op dit toestel bevestigd. Tweevingerzoom en fysieke stemkwaliteit blijven op telefoon te testen.
+
+## Verplaatsen 0.4.1
+
+Bestaande boot en wedstrijdpunten hebben een Verplaats-knop. Nieuwe positie verschijnt als voorstel met apart OK/Annuleer. Browsercontrole: verplaatsen van niet-actieve Boei 1 bewaart uitsluitend die boei na OK; annuleren na een ander voorstel behoudt vorige coördinaten.
