@@ -1,0 +1,7 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {calculateWorkerRoute} from './route-worker.js';import {destination} from './engine.js';
+const p={lat:52.73,lon:5.3},now=Date.now(),polar={points:[{twa:40,speedKnots:5},{twa:90,speedKnots:6},{twa:180,speedKnots:4}]};
+const base=()=>({position:p,waypoints:[destination(p,0,.15)],wind:{fromDeg:270,speedKnots:15},polar,forecastBaseMs:now,maxSteps:30});
+const field=()=>({axesEastNorthVerified:true,radiusM:3000,points:[{...p,status:'available',runAt:new Date(now-3600000).toISOString(),events:[{time:new Date(now).toISOString(),uMps:1,vMps:0,speedKnots:1.94384449,toGridDeg:90}]}]});
+test('worker samples eastward current and corrects northbound course westward',async()=>{const r=await calculateWorkerRoute({...base(),currentField:field()});assert.equal(r.status,'ok');assert.ok(r.path.slice(1).some(q=>q.heading>330&&q.heading<359));assert.ok(r.warnings.some(w=>w.includes('per positie')));});
+test('worker missing field blocks instead of assuming zero current',async()=>{const r=await calculateWorkerRoute({...base(),currentField:{points:[]}});assert.equal(r.status,'blocked');assert.ok(r.warnings.some(w=>w.includes('niet als nulstroming')));});
+test('manual current has priority over missing automatic field',async()=>{const r=await calculateWorkerRoute({...base(),current:{speedKnots:0,toDeg:0},currentField:{points:[]}});assert.equal(r.status,'ok');assert.ok(!r.warnings.some(w=>w.includes('Stromingsmodel ontbreekt')));});
