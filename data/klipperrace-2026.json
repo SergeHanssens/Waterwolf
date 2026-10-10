@@ -5,10 +5,10 @@
     "2026-10-11"
   ],
   "timezone": "Europe/Amsterdam",
-  "verifiedAt": "2026-10-08",
+  "verifiedAt": "2026-10-10",
   "source": "https://klipperrace.nl/bepalingen",
   "bindingDocument": "https://klipperrace.nl/public/media/2026/wedstrijdbepalingen_klipperrace_2026.pdf",
-  "verificationStatus": "Officiële PDF V1.1 van 15-09-2026 gelezen op 08-10-2026; palaver en wijzigingen blijven verplicht controleren",
+  "verificationStatus": "Officiële PDF V1.1 gecontroleerd op 10-10-2026; gekozen baan nog via palaver/WhatsApp/VHF 88 bevestigen",
   "palaverLocalTime": "08:00",
   "scheduledFirstAttentionLocalTime": "09:50",
   "raceStartLocalTime": null,
@@ -136,5 +136,276 @@
   "officialNoticeboard": "Klipperrace-26 officiële bord (WhatsApp)",
   "note": "Boeiposities RWS/PDOK dataset 04-10-2026; geen bevestiging van de gekozen wedstrijdbaan. Start/finishlichtcoördinaten en Kreupel-hindernisgeometrie nog onbekend.",
   "bindingDocumentVersion": "V1.1 15-09-2026",
-  "sundayFinishDeadlineLocalTime": "16:00"
+  "sundayFinishDeadlineLocalTime": "16:00",
+  "saturdayScheduledStart": "2026-10-10T10:00",
+  "courses": [
+    {
+      "id": "0",
+      "name": "Lang · Urk – Stavoren",
+      "marks": [
+        {
+          "name": "EZ D",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "ST1 SB2",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Lang · Stavoren – Urk",
+      "marks": [
+        {
+          "name": "ST1 SB2",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ D",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Lang · Stavoren – Medemblik",
+      "marks": [
+        {
+          "name": "ST 11",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "Sport C",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Lang · Medemblik – Stavoren",
+      "marks": [
+        {
+          "name": "Sport C",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "ST 11",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Lang · Medemblik – Urk",
+      "marks": [
+        {
+          "name": "Sport C",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ D",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Lang · Urk – Medemblik",
+      "marks": [
+        {
+          "name": "EZ D",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "Sport C",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Middellang · Urk – Stavoren",
+      "marks": [
+        {
+          "name": "EZ C",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "ST1 SB2",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Middellang · Stavoren – Urk",
+      "marks": [
+        {
+          "name": "ST1 SB2",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ C",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Middellang · Stavoren – Medemblik",
+      "marks": [
+        {
+          "name": "LC 11",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "De Kreupel",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "Sport C",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Middellang · Medemblik – Stavoren",
+      "marks": [
+        {
+          "name": "Sport C",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "De Kreupel",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "LC 11",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Middellang · Medemblik – Urk",
+      "marks": [
+        {
+          "name": "Sport C",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ C",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Middellang · Urk – Medemblik",
+      "marks": [
+        {
+          "name": "EZ C",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "Sport C",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Kort · Stavoren – Urk",
+      "marks": [
+        {
+          "name": "EZ A",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EL A",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ C",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Kort · Urk – Stavoren",
+      "marks": [
+        {
+          "name": "EZ C",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "EL A",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "EZ A",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Kort · Stavoren – Medemblik",
+      "marks": [
+        {
+          "name": "LC 11",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "De Kreupel",
+          "rounding": "bakboord"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Kort · Medemblik – Stavoren",
+      "marks": [
+        {
+          "name": "De Kreupel",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "LC 11",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Kort · Medemblik – Urk",
+      "marks": [
+        {
+          "name": "EZ A",
+          "rounding": "stuurboord"
+        },
+        {
+          "name": "EZ D",
+          "rounding": "stuurboord"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Kort · Urk – Medemblik",
+      "marks": [
+        {
+          "name": "EZ D",
+          "rounding": "bakboord"
+        },
+        {
+          "name": "EZ A",
+          "rounding": "bakboord"
+        }
+      ]
+    }
+  ]
 }

@@ -1,7 +1,7 @@
-import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.3';
-import {routeRace} from './engine.js?v=0.6.3';
-import {explainRoute} from './explanation.js?v=0.6.3';
-import {currentFromField} from './current-field.js?v=0.6.3';
+import {loadBathymetry,depthAt} from './bathymetry.js?v=0.6.4';
+import {routeRace} from './engine.js?v=0.6.4';
+import {explainRoute} from './explanation.js?v=0.6.4';
+import {currentFromField} from './current-field.js?v=0.6.4';
 /** Shared entry point for worker execution and integration tests. Manual current wins. */
 export async function calculateWorkerRoute(input){
  const data={...input},missingCurrent=new Set();
