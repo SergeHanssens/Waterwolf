@@ -3,10 +3,10 @@
   "source": "https://rwsos.rws.nl/",
   "api": "FEWS PI timeseries/grid",
   "kind": "forecast",
-  "fetchedAt": "2026-10-20T19:13:33.442Z",
-  "runAt": "2026-10-20T12:00:00Z",
-  "startTime": "2026-10-20T19:00:00Z",
-  "endTime": "2026-10-21T07:00:00Z",
+  "fetchedAt": "2026-10-20T22:17:39.988Z",
+  "runAt": "2026-10-20T18:00:00Z",
+  "startTime": "2026-10-20T22:00:00Z",
+  "endTime": "2026-10-21T10:00:00Z",
   "radiusM": 1450,
   "axesEastNorthVerified": true,
   "axisNote": "Officiële RWS-definitie: VELU oostwaarts, VELV noordwaarts.",
@@ -20,10 +20,10 @@
   "points": [
     {
       "lat": 52.7,
-      "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "lon": 5.214,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:27.489Z",
+      "fetchedAt": "2026-10-20T22:17:34.237Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -33,10 +33,10 @@
     },
     {
       "lat": 52.7,
-      "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "lon": 5.244,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:27.493Z",
+      "fetchedAt": "2026-10-20T22:17:34.250Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -47,9 +47,9 @@
     {
       "lat": 52.7,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:27.733Z",
+      "fetchedAt": "2026-10-20T22:17:34.533Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -60,33 +60,12 @@
     {
       "lat": 52.7,
       "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.122Z",
+      "fetchedAt": "2026-10-20T22:17:34.916Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -156,43 +135,43 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.7,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.211Z",
+      "fetchedAt": "2026-10-20T22:17:34.984Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -262,19 +241,40 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.718,
       "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.391Z",
+      "fetchedAt": "2026-10-20T22:17:35.135Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -285,9 +285,9 @@
     {
       "lat": 52.718,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.470Z",
+      "fetchedAt": "2026-10-20T22:17:35.204Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -298,9 +298,9 @@
     {
       "lat": 52.718,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.643Z",
+      "fetchedAt": "2026-10-20T22:17:35.385Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -311,37 +311,37 @@
     {
       "lat": 52.718,
       "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:28.921Z",
+      "fetchedAt": "2026-10-20T22:17:35.616Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.718,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.068Z",
+      "fetchedAt": "2026-10-20T22:17:35.828Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.736,
       "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.163Z",
+      "fetchedAt": "2026-10-20T22:17:35.856Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -352,9 +352,9 @@
     {
       "lat": 52.736,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.311Z",
+      "fetchedAt": "2026-10-20T22:17:36.070Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -365,50 +365,50 @@
     {
       "lat": 52.736,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.415Z",
+      "fetchedAt": "2026-10-20T22:17:36.102Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
       "status": "unknown",
       "reason": "Geen velu/velv-modelcel op deze positie."
-    },
-    {
-      "lat": 52.736,
-      "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
-      "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.719Z",
-      "kind": "forecast",
-      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
-      "events": [],
-      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
-      "status": "unknown",
-      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.736,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.847Z",
+      "fetchedAt": "2026-10-20T22:17:36.485Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
+      "status": "unknown",
+      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
+    },
+    {
+      "lat": 52.736,
+      "lon": 5.304,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
+      "basin": "ijsselmeer",
+      "fetchedAt": "2026-10-20T22:17:36.485Z",
+      "kind": "forecast",
+      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
+      "events": [],
+      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.754,
       "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:29.977Z",
+      "fetchedAt": "2026-10-20T22:17:36.723Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
@@ -419,60 +419,39 @@
     {
       "lat": 52.754,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:30.335Z",
+      "fetchedAt": "2026-10-20T22:17:36.990Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.754,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:30.386Z",
+      "fetchedAt": "2026-10-20T22:17:37.146Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
         {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": -0.1,
-          "vMps": 0,
-          "speedKnots": 0.19438444900000001,
-          "toGridDeg": 270
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": -0.1,
-          "vMps": 0,
-          "speedKnots": 0.19438444900000001,
-          "toGridDeg": 270
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": -0.1,
-          "vMps": 0,
-          "speedKnots": 0.19438444900000001,
-          "toGridDeg": 270
-        },
-        {
           "time": "2026-10-20T22:00:00Z",
-          "uMps": -0.1,
+          "uMps": 0,
           "vMps": 0,
-          "speedKnots": 0.19438444900000001,
-          "toGridDeg": 270
+          "speedKnots": 0,
+          "toGridDeg": null
         },
         {
           "time": "2026-10-20T23:00:00Z",
-          "uMps": -0.1,
+          "uMps": 0,
           "vMps": 0,
-          "speedKnots": 0.19438444900000001,
-          "toGridDeg": 270
+          "speedKnots": 0,
+          "toGridDeg": null
         },
         {
           "time": "2026-10-21T00:00:00Z",
@@ -484,37 +463,37 @@
         {
           "time": "2026-10-21T01:00:00Z",
           "uMps": -0.1,
-          "vMps": 0.1,
-          "speedKnots": 0.27490112409022127,
-          "toGridDeg": 315
+          "vMps": 0,
+          "speedKnots": 0.19438444900000001,
+          "toGridDeg": 270
         },
         {
           "time": "2026-10-21T02:00:00Z",
           "uMps": -0.1,
-          "vMps": 0.1,
-          "speedKnots": 0.27490112409022127,
-          "toGridDeg": 315
+          "vMps": 0,
+          "speedKnots": 0.19438444900000001,
+          "toGridDeg": 270
         },
         {
           "time": "2026-10-21T03:00:00Z",
           "uMps": -0.1,
-          "vMps": 0.1,
-          "speedKnots": 0.27490112409022127,
-          "toGridDeg": 315
+          "vMps": 0,
+          "speedKnots": 0.19438444900000001,
+          "toGridDeg": 270
         },
         {
           "time": "2026-10-21T04:00:00Z",
           "uMps": -0.1,
-          "vMps": 0.1,
-          "speedKnots": 0.27490112409022127,
-          "toGridDeg": 315
+          "vMps": 0,
+          "speedKnots": 0.19438444900000001,
+          "toGridDeg": 270
         },
         {
           "time": "2026-10-21T05:00:00Z",
           "uMps": -0.1,
-          "vMps": 0.1,
-          "speedKnots": 0.27490112409022127,
-          "toGridDeg": 315
+          "vMps": 0,
+          "speedKnots": 0.19438444900000001,
+          "toGridDeg": 270
         },
         {
           "time": "2026-10-21T06:00:00Z",
@@ -529,122 +508,129 @@
           "vMps": 0.1,
           "speedKnots": 0.27490112409022127,
           "toGridDeg": 315
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": -0.1,
+          "vMps": 0.1,
+          "speedKnots": 0.27490112409022127,
+          "toGridDeg": 315
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": -0.1,
+          "vMps": 0.1,
+          "speedKnots": 0.27490112409022127,
+          "toGridDeg": 315
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": -0.1,
+          "vMps": 0.1,
+          "speedKnots": 0.27490112409022127,
+          "toGridDeg": 315
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.754,
-      "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
-      "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:30.728Z",
-      "kind": "forecast",
-      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
-      "events": [],
-      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
-      "status": "unknown",
-      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
-    },
-    {
-      "lat": 52.754,
       "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:30.729Z",
+      "fetchedAt": "2026-10-20T22:17:37.385Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
         {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
+          "time": "2026-10-20T22:00:00Z",
           "uMps": -0.2,
           "vMps": 0.1,
           "speedKnots": 0.4346568417328411,
           "toGridDeg": 296.565051177078
         },
         {
-          "time": "2026-10-20T21:00:00Z",
+          "time": "2026-10-20T23:00:00Z",
           "uMps": -0.2,
-          "vMps": 0.2,
-          "speedKnots": 0.5498022481804425,
-          "toGridDeg": 315
-        },
-        {
-          "time": "2026-10-20T22:00:00Z",
-          "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
-        },
-        {
-          "time": "2026-10-20T23:00:00Z",
-          "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
+          "vMps": 0.1,
+          "speedKnots": 0.4346568417328411,
+          "toGridDeg": 296.565051177078
         },
         {
           "time": "2026-10-21T00:00:00Z",
-          "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
+          "uMps": -0.2,
+          "vMps": 0.1,
+          "speedKnots": 0.4346568417328411,
+          "toGridDeg": 296.565051177078
         },
         {
           "time": "2026-10-21T01:00:00Z",
           "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
+          "vMps": 0.1,
+          "speedKnots": 0.6146976005568396,
+          "toGridDeg": 288.434948822922
         },
         {
           "time": "2026-10-21T02:00:00Z",
           "uMps": -0.3,
-          "vMps": 0.2,
-          "speedKnots": 0.7008630980223147,
-          "toGridDeg": 303.69006752597977
+          "vMps": 0.1,
+          "speedKnots": 0.6146976005568396,
+          "toGridDeg": 288.434948822922
         },
         {
           "time": "2026-10-21T03:00:00Z",
+          "uMps": -0.3,
+          "vMps": 0.1,
+          "speedKnots": 0.6146976005568396,
+          "toGridDeg": 288.434948822922
+        },
+        {
+          "time": "2026-10-21T04:00:00Z",
           "uMps": -0.3,
           "vMps": 0.2,
           "speedKnots": 0.7008630980223147,
           "toGridDeg": 303.69006752597977
         },
         {
-          "time": "2026-10-21T04:00:00Z",
-          "uMps": -0.4,
-          "vMps": 0.2,
-          "speedKnots": 0.8693136834656822,
-          "toGridDeg": 296.565051177078
-        },
-        {
           "time": "2026-10-21T05:00:00Z",
-          "uMps": -0.4,
+          "uMps": -0.3,
           "vMps": 0.2,
-          "speedKnots": 0.8693136834656822,
-          "toGridDeg": 296.565051177078
+          "speedKnots": 0.7008630980223147,
+          "toGridDeg": 303.69006752597977
         },
         {
           "time": "2026-10-21T06:00:00Z",
-          "uMps": -0.4,
+          "uMps": -0.3,
           "vMps": 0.2,
-          "speedKnots": 0.8693136834656822,
-          "toGridDeg": 296.565051177078
+          "speedKnots": 0.7008630980223147,
+          "toGridDeg": 303.69006752597977
         },
         {
           "time": "2026-10-21T07:00:00Z",
+          "uMps": -0.3,
+          "vMps": 0.2,
+          "speedKnots": 0.7008630980223147,
+          "toGridDeg": 303.69006752597977
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": -0.3,
+          "vMps": 0.2,
+          "speedKnots": 0.7008630980223147,
+          "toGridDeg": 303.69006752597977
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": -0.3,
+          "vMps": 0.2,
+          "speedKnots": 0.7008630980223147,
+          "toGridDeg": 303.69006752597977
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
           "uMps": -0.4,
           "vMps": 0.2,
           "speedKnots": 0.8693136834656822,
@@ -652,124 +638,117 @@
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
-      "lat": 52.772,
-      "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "lat": 52.754,
+      "lon": 5.334,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.109Z",
+      "fetchedAt": "2026-10-20T22:17:37.556Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
+      "status": "unknown",
+      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
+    },
+    {
+      "lat": 52.772,
+      "lon": 5.214,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
+      "basin": "ijsselmeer",
+      "fetchedAt": "2026-10-20T22:17:37.738Z",
+      "kind": "forecast",
+      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
+      "events": [],
+      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.772,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.110Z",
+      "fetchedAt": "2026-10-20T22:17:37.868Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
-      "status": "unknown",
-      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
-    },
-    {
-      "lat": 52.772,
-      "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
-      "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.435Z",
-      "kind": "forecast",
-      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
-      "events": [],
-      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.772,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.527Z",
+      "fetchedAt": "2026-10-20T22:17:38.087Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
+      "status": "unknown",
+      "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
+    },
+    {
+      "lat": 52.772,
+      "lon": 5.304,
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
+      "basin": "ijsselmeer",
+      "fetchedAt": "2026-10-20T22:17:38.239Z",
+      "kind": "forecast",
+      "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
+      "events": [],
+      "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.772,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.778Z",
+      "fetchedAt": "2026-10-20T22:17:38.366Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.79,
       "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:31.861Z",
+      "fetchedAt": "2026-10-20T22:17:38.552Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.79,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.102Z",
+      "fetchedAt": "2026-10-20T22:17:38.664Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -839,43 +818,43 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.79,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.196Z",
+      "fetchedAt": "2026-10-20T22:17:38.874Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -945,71 +924,71 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.79,
       "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.419Z",
+      "fetchedAt": "2026-10-20T22:17:38.999Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.79,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.502Z",
+      "fetchedAt": "2026-10-20T22:17:39.207Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.808,
       "lon": 5.214,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.761Z",
+      "fetchedAt": "2026-10-20T22:17:39.332Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -1079,43 +1058,43 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.808,
       "lon": 5.244,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:32.859Z",
+      "fetchedAt": "2026-10-20T22:17:39.562Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [
-        {
-          "time": "2026-10-20T19:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T20:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
-        {
-          "time": "2026-10-20T21:00:00Z",
-          "uMps": 0,
-          "vMps": 0,
-          "speedKnots": 0,
-          "toGridDeg": null
-        },
         {
           "time": "2026-10-20T22:00:00Z",
           "uMps": 0,
@@ -1185,52 +1164,73 @@
           "vMps": 0,
           "speedKnots": 0,
           "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T08:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T09:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
+        },
+        {
+          "time": "2026-10-21T10:00:00Z",
+          "uMps": 0,
+          "vMps": 0,
+          "speedKnots": 0,
+          "toGridDeg": null
         }
       ],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "available",
       "reason": null
     },
     {
       "lat": 52.808,
       "lon": 5.274,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:33.092Z",
+      "fetchedAt": "2026-10-20T22:17:39.655Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.808,
       "lon": 5.304,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:33.179Z",
+      "fetchedAt": "2026-10-20T22:17:39.877Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     },
     {
       "lat": 52.808,
       "lon": 5.334,
-      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T12:00:00Z",
+      "layer": "-ijsselmeer_fm_harmonie--stroom--2026-10-20T18:00:00Z",
       "basin": "ijsselmeer",
-      "fetchedAt": "2026-10-20T19:13:33.441Z",
+      "fetchedAt": "2026-10-20T22:17:39.988Z",
       "kind": "forecast",
       "source": "https://rwsos.rws.nl/matroos-open/rest/fewspiservice/v1/timeseries/grid",
       "events": [],
       "coordinateNote": "Point coordinates are request coordinates; FEWS header lat/lon is reference location, not sampled cell.",
-      "runAt": "2026-10-20T12:00:00Z",
+      "runAt": "2026-10-20T18:00:00Z",
       "status": "unknown",
       "reason": "Modelcel ontbreekt of kwaliteitsvlag ongeldig."
     }
