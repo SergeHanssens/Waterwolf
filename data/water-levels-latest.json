@@ -6,11 +6,11 @@
       "lat": 52.694,
       "lon": 5.284,
       "basin": "ijsselmeer",
-      "levelM": -0.3,
-      "timestamp": "2026-11-23T20:40:00.000+01:00",
+      "levelM": -0.36,
+      "timestamp": "2026-11-24T05:20:00.000+01:00",
       "qualityCode": "00",
-      "ageSeconds": 1876.792,
-      "stale": true,
+      "ageSeconds": 1700.696,
+      "stale": false,
       "datum": "NAP",
       "kind": "measurement",
       "source": "https://rijkswaterstaatdata.nl/waterdata/"
@@ -53,11 +53,11 @@
       "lat": 52.838,
       "lon": 5.71,
       "basin": "ijsselmeer",
-      "levelM": -0.29,
-      "timestamp": "2026-11-23T20:40:00.000+01:00",
+      "levelM": -0.3,
+      "timestamp": "2026-11-24T05:20:00.000+01:00",
       "qualityCode": "00",
-      "ageSeconds": 1876.792,
-      "stale": true,
+      "ageSeconds": 1700.696,
+      "stale": false,
       "datum": "NAP",
       "kind": "measurement",
       "source": "https://rijkswaterstaatdata.nl/waterdata/"
@@ -85,9 +85,9 @@
       "lon": 5.279974,
       "basin": "markermeer",
       "levelM": -0.28,
-      "timestamp": "2026-11-23T20:50:00.000+01:00",
+      "timestamp": "2026-11-24T05:30:00.000+01:00",
       "qualityCode": "00",
-      "ageSeconds": 1276.792,
+      "ageSeconds": 1100.696,
       "stale": false,
       "datum": "NAP",
       "kind": "measurement",
@@ -126,7 +126,7 @@
       "error": "Geen bruikbare recente NAP-meting beschikbaar."
     }
   ],
-  "fetchedAt": "2026-11-23T20:11:16.792Z",
+  "fetchedAt": "2026-11-24T04:48:20.696Z",
   "source": "https://rijkswaterstaatdata.nl/waterdata/",
   "notice": "Waterhoogte tegenover NAP; geen waterdiepte. Ontbrekende of oude stations geven geen actueel vaaradvies."
 }
